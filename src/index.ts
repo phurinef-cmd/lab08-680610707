@@ -9,8 +9,8 @@ import notFoundMiddleware from "./middlewares/notFoundMiddleware.js";
 import studentRouter_v2 from "./routes/studentsRoutes_v2.js";
 import studentRouter_v3 from "./routes/studentsRoutes_v3.js";
 import courseRouter_v2 from "./routes/coursesRouters_v2.js";
-import enrollmentRoutes_v1 from "./routes/enrollmentRoutes_v1.js";
-import enrollmentRoutes_v2 from "./routes/enrollmentRoutes_v2.js";
+import enrollmentRoutes_v1 from "./routes/enrollmentRouters_v1.js";
+import enrollmentRoutes_v2 from "./routes/enrollmentRouters_v2.js";
 import { enrollments } from "./db/db.js";
 
 const app = express();
