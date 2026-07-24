@@ -24,7 +24,7 @@ router.get("/", (req: Request, res: Response) => {
     if((!courseNo && !studentId)||(courseNo && studentId)){
       return res.status(400).json({
         ok : false ,
-        message: "Please provide either studentId or CourseNo and not both",
+        message: "Please provide either studentId or courseNo and not both!",
       });
     }
 
@@ -65,7 +65,7 @@ router.get("/", (req: Request, res: Response) => {
       if (!c_student.success){
         return res.status(400).json({
           ok : false,
-          massage : c_student.error.issues[0]?.message,
+          message : c_student.error.issues[0]?.message,
         });
       }
       let course_list = [];
